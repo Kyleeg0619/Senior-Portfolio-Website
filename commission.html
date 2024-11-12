@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kye's Portfolio</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <ul class="links">
+          <img class="logo" src="icons/brand-logo.png" alt="" />
+          <li><a href="index.html">Home</a></li>
+          <li><a href="commission.html">Commissions</a></li>
+          <li><a href="socials.html">Socials</a></li>
+        </ul>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <!-- Dropdown -->
+      <div class="dropdown">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="commission.html">Commissions</a></li>
+        <li><a href="socials.html">Socials</a></li>
+      </div>
+    </nav>
+
+    <header>
+      <img src="images/swirl-banner.jpg" alt="" />
+    </header>
+
+    <main>
+      <h1>Commission Info</h1>
+      <section class="flexblock commission-block">
+        <div class="pricing">
+          <h3>Headshots</h3>
+          <h4>Price: $10</h4>
+          <hr />
+          <h3>Torso</h3>
+          <h4>Price: $20</h4>
+          <hr />
+          <h3>Full-body</h3>
+          <h4>Price: $25</h4>
+          <hr />
+          <h4>Extra Character(s): +$5</h4>
+          <h4>Dynamic Background: +$10</h4>
+        </div>
+        <img src="images/pricing.png" alt="" />
+      </section>
+
+      <section class="gallery-block">
+        <div class="gallery">
+          <img src="images/headshot-one.jpg" alt="" />
+          <img src="images/headshot-three.jpg" alt="" />
+          <img src="images/headshot-two.jpg" alt="" />
+        </div>
+        <div class="gallery-text">
+          <h2>Headshots</h2>
+          <h3>$10</h3>
+          <p>
+            A headshot is from the shoulders or neck up depending on the
+            character. These can also be logos, profile pictures, etc. They come
+            with simple backgrounds congruent to the design of the character.
+          </p>
+        </div>
+      </section>
+
+      <section class="gallery-block">
+        <div class="gallery">
+          <img src="images/torso-two.jpg" alt="" />
+          <img src="images/torso-one.jpg" alt="" />
+          <img src="images/torso-three.jpg" alt="" />
+        </div>
+        <div class="gallery-text">
+          <h2>Torso</h2>
+          <h3>$20</h3>
+          <p>
+            A torso is drawn from the hips to lower thighs and up. At request
+            certain poses and scenery can be added. These pieces have relatively
+            simple backgrounds.
+          </p>
+        </div>
+      </section>
+
+      <section class="gallery-block">
+        <div class="gallery">
+          <img src="images/fullbody-two.PNG" alt="" />
+          <img src="images/fullbody-one.PNG" alt="" />
+          <img src="images/fullbody-three.PNG" alt="" />
+        </div>
+        <div class="gallery-text">
+          <h2>Full-body</h2>
+          <h3>$25</h3>
+          <p>A full-body commission includes action/dynamic poses.</p>
+        </div>
+      </section>
+
+      <!-- Dos and Don'ts-->
+      <div style="margin-top: 50px">
+        <h2 class="center">Dos and Don'ts</h2>
+        <section class="policies">
+          <div>
+            <object
+              data="icons/check-mark-svgrepo-com.svg"
+              width="100px"
+              height="100px"
+            ></object>
+            <h3>Do's</h3>
+            <ul>
+              <li>Humans/humanoids/Fantasy humanoid characters</li>
+              <li>Couples and ships of any gender</li>
+              <li>Fanart</li>
+              <li>Furry/Anthro characters</li>
+              <li>Soft NSFW(suggestive/revealing characters)</li>
+            </ul>
+          </div>
+          <div>
+            <object
+              data="icons/x-symbol-svgrepo-com.svg"
+              width="90px"
+              height="90px"
+            ></object>
+            <h3>Don'ts</h3>
+            <ul>
+              <li>Hateful or derogatory art</li>
+              <li>NSFW</li>
+              <li>Hyperrealism</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- <div class="closed">
+        <h1>Commissions Closed - Form Unavailable</h1>
+      </div> -->
+
+      <!-- Work process -->
+      <!-- Inquiry, Agreement, Payment, Production, Delivery -->
+
+      <!-- Form for commission information -->
+      <!-- <form action="mail.php" method="POST" class="commission-info" id="form">
+      <div id="form-area">
+        <h2>Request a Commission:</h2>
+
+        <section>
+            <div class="center">
+              <input type="text" class="input-field"
+              name="name" placeholder="Enter your Name/Username" required>
+              <input type="email" class="input-field" name="email" placeholder="Enter your Email" required>
+              <input type="number" class="input-field" name="character_number" maxlength="1" placeholder="How Many Characters?" required>
+            </div>
+
+
+          <div class="center">
+            <select name="commission_type" id="type" required>
+              <option value="" selected name="none">Commission Type</option>
+              <option value="headshot" name="headshot">Headshot</option>
+              <option value="torso" name="torso">Torso</option>
+              <option value="full-body" name="full-body">Full-Body</option>
+            </select>
+            <br>
+            <label for="ref-img">Reference Image #1:</label>
+            <br>
+            <input type="file" name="ref_img" accept="image/jpeg,image/png" id="ref-img" required>
+            <br>
+            <label for="ref-img">Reference Image (optional) #2:</label>
+            <br>
+            <input type="file" name="ref_img" accept="image/jpeg,image/png" id="ref-img">
+          </div>
+        </section>
+        <input type="text" name="details" placeholder="Commission Details" class="input-field" id="details" style="display: block;width: 80%;" accept="image/jpeg,image/png">
+      </div>
+
+      <button type="submit" value="Send" class="submit">Request a Quote</button>
+      <p class="text-base text-center text-gray-400" id="result"></p>
+      </form> -->
+      <div id="ff-compose"></div>
+      <script
+        async
+        defer
+        src="https://formfacade.com/include/113136280763943833468/form/1FAIpQLScbmmADMVSX5lac7a369RyBxDWr4rVoIcRJhW1DOkEkVcYCoQ/classic.js?div=ff-compose"
+      ></script>
+      <br />
+    </main>
+
+    <footer>
+      <p class="copyright">Copyright &copy; 2024 CloverMush</p>
+    </footer>
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+  </body>
+</html>
